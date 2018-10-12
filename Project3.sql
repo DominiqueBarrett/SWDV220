@@ -47,8 +47,11 @@ VALUES
 USE DiskInventory;
 
 INSERT INTO Disks --Did not include DiskID
-    (DiskTypeID,
-    DiskStatusID, GenreID, DiskName, ReleasedDate)
+    (DiskTypeID
+	,DiskStatusID
+	,GenreID
+	,DiskName
+	,ReleasedDate)
 VALUES
     (1, 1, 6, 'Kamikaze', '2018-01-11'),
 	(1, 1, 5, 'The Greatest Showman: Original Motion Picture Soundtrack', '2017-10-11'),
@@ -80,8 +83,9 @@ VALUES
 USE DiskInventory;
 
 INSERT INTO Borrower
-    (FirstName,
-    LastName, PhoneNumber)
+    (FirstName
+	,LastName
+	,PhoneNumber)
 VALUES
     ('Bill', 'Smith', '645-357-8456'),
     ('Jordan', 'Barrett', '896-435-1546'),
@@ -152,7 +156,10 @@ VALUES
 USE DiskInventory;
 
 INSERT INTO DiskHasBorrower
-    (BorrowerID, DiskID, BorrowedDate, ReturnedDate)
+    (BorrowerID
+	,DiskID
+	,BorrowedDate
+	,ReturnedDate)
 VALUES
     (1, 1, '2018-04-16', '2018-04-18'),
     (2, 2, '2018-03-16', '2018-03-21'),
@@ -198,7 +205,8 @@ VALUES
 USE DiskInventory;
 
 INSERT INTO DiskHasArtist
-    (ArtistID, DiskID)
+    (ArtistID
+	,DiskID)
 VALUES
 	(6, 1),
 	(8, 2),
